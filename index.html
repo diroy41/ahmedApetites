@@ -2,17 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Recipes</title>
+    <title>Ahmed's Appetite</title>
 </head>
 <body>
-    <h1 class="header">Odin Recipes</h1>
-    <ul>
-   <li class="list"> <a href="recipes/lasagna.html">Lasagna Recipe!</a></li>
-    <li class="list"><a href="recipes/banana-bars.html">Banana Bars!</a></li>
-   <li class="list"><a href="recipes/brownies.html">Brownies!</a></li>
-</ul>
+    <header>
+        <h1 class="header">Ahmed's Appetite</h1>
+
+        <div class="dropdown">
+            <button class="dropbtn">Recipes</button>
+
+            <div class="dropdown-content">
+                <a href="recipes/lasagna.html">Lasagna Recipe</a>
+                <a href="recipes/banana-bars.html">Banana Bars</a>
+                <a href="recipes/brownies.html">Brownies</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="images/chef.gif" alt="A chef">
+        </div>
+        <section class="recipes">
+            <h2>Recipes</h2>
+            <ul>
+                <li><a href="recipes/lasagna.html">Lasagna Recipe</a></li>
+                <li><a href="recipes/banana-bars.html">Banana Bars</a></li>
+                <li><a href="recipes/brownies.html">Brownies</a></li>
+            </ul>
+        </section>
+
+        <section class="recipes">
+            <form action="/action_page.php">
+                <label >Request a Recipe:</label><br>
+                <input type="text" id="rec" name="rec" value=""><br>
+                <label >Email for updates:</label><br>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+                <div>
+                <input type="submit" value="Submit">
+            </div>
+              </form> 
+              
+              <p>Click submit to send me a request a recipe!</p>
+
+
+
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
